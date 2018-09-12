@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>horizon telecom</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="menu.css">
+    <script type="text/javascript" src="jquery-3.3.1.js">    </script> </head>
+
+
+<body id="top">
+    <div class="wrapper row1">
+        <header id="" class="">
+
+          <nav>
+        <a id="resp-menu" class="responsive-menu" href="#"><i class="menu-s"></i> MENU</a>
+        <ul class="menu">
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li><a class="drop" href="#">â propos</a>
+                        <ul>
+                            <li><a href="identite.html">Notre Identité</a></li>
+							<li><a href="pages/full-width.html">Notre Unicité</a></li>
+							<li><a href="prestation.html">Notre Ingéniosité</a></li>
+							<li><a href="#">Notre Agréments</a>
+                                <ul>
+                                    <li>><a href="images/demo/CII-HT-2018a2022.pdf">Certifié ISO9001</a></li>
+                                    <li><a href="images/demo/CIR-HT-2018a2022.pdf">Agréments C.I.R.</a></li>
+                                    <li><a href="images/demo/CII-HT-2018a2022%20(1).pdf">Agréments C.I.I.</a></li>
+
+                                </ul>
+                            </li>
+                             <li><a href="prestation.html">Nos Produits</a></li>
+                        </ul>
+                    </li>
+                  
+                 <li><a class="drop" href="#produit">PRODUITS</a>
+                        <ul>
+                            <li><a href="images/demo/Edition-de-macon-20140918.pdf">4BIDABLE</a></li>
+                            <li><a href="images/demo/FicheDang-VF-Ed1.pdf">DANG</a></li>
+                            <li><a href="images/demo/fiche%20produit%20VDEF-DIMLED-RAD.pdf">DIMLED-RAD</a></li>
+                            <li><a href="images/demo/fiche%20produit%20VDEF-HORSIN-IP.pdf">HORSIN-IP</a></li>
+                            <li><a href="images/demo/Doc-commercial-AIUTO-ed1.pdf">AIUTO</a></li>
+                            <li><a href="images/demo/Doc-commercial-DIMRAD-WF-ed1.pdf">DIMRAD-WF</a></li>
+                        </ul>
+                    </li>
+                
+                    
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+              <script>
+        $(document).ready(function() {
+            var touch = $('#resp-menu');
+            var menu = $('.menu');
+
+            $(touch).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function() {
+                var w = $(window).width();
+                if (w > 767 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+
+        });
+
+    </script>
+        </header>
+    </div>
+
+
+<div class="wrapper row3">
+<img src="images/demo/contact.jpg" alt="contact">
+      
+ <main class="hoc container clear"> 
+   
+    <div class="content"> 
+     
+      <h1>Vous souhaitez nous contacter ?</h1>
+       <p>Merci de remplir ce formulaire.</p>
+     
+      <div id="form-main">
+      
+  
+     
+ 
+    <div class="clear">  <p>Vous pouvez aussi nous contacter par téléphone au +33 (0) 385 677 530 </p></div>
+    </div></div>
+     
+  </main>
+ 
+  
+  
+</div>
+
+	<div class="wrapper overlay bgded">
+		<div id="ctdetails" class="hoc clear">
+			<ul class="nospace group">
+				<li class="one_third first"><i class="fa fa-map-marker"></i>
+					<p>6, rue de Gueugnon <br>MONTCEAU LES MINES</p>
+					<p><a href="https://www.google.fr/maps/place/Horizon+T%C3%A9l%C3%A9com/@46.6644272,4.3579412,17z/data=!4m12!1m6!3m5!1s0x47f3b5d7fd42fad9:0x8e77777647118b91!2zSG9yaXpvbiBUw6lsw6ljb20!8m2!3d46.664455!4d4.3572161!3m4!1s0x47f3b5d7fd42fad9:0x8e77777647118b91!8m2!3d46.664455!4d4.3572161">Google Maps</a></p>
+				</li>
+				<li class="one_third"><i class="fa fa-phone"></i>
+					<p>Téléphone</p>
+					<p>+33 (0) 385 677 530</p>
+				</li>
+				<li class="one_third"><i class="fa fa-envelope-o"></i>
+					<p>E-mail</p>
+					<p>contact@horizon-telecom.fr </p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wrapper row5">
+		<div id="copyright" class="hoc clear">
+			<p class="copyright">Copyright &copy; 2018 Tous droits réservés <a href="index.html"> HORIZON TELECOM</a> <a href="#">by CHROMATICity</a></p>
+			
+		</div>
+	</div> <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+ 
+    <!-- JAVASCRIPTS -->
+    <script src="contact.js"></script>
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
